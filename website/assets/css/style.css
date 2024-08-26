@@ -532,7 +532,11 @@ h5 {
     top: 590px;
 }
 
-.social a {
+.m-social {
+    display: none;
+}
+
+.social a, .m-social a {
     font-size: 20px;
     transition-duration: .2s;
     -moz-transition-duration: .2s;
@@ -540,7 +544,7 @@ h5 {
     -o-transition-duration: .2s;
 }
 
-.social a:hover {
+.social a:hover, .m-social a:hover {
     color: #fff;
 }
 
