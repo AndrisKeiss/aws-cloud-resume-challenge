@@ -1,10 +1,11 @@
 // counter js code
 
 const counter = document.querySelector(".counter-number");
+const url = "https://72ki3evexaakn54pz57bztmhni0hjlkd.lambda-url.eu-north-1.on.aws/";
 
 async function updateCounter() {
     try {
-        let response = await fetch("https://72ki3evexaakn54pz57bztmhni0hjlkd.lambda-url.eu-north-1.on.aws/");
+        let response = await fetch(url);
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }

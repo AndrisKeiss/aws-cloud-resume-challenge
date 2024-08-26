@@ -3,7 +3,7 @@ resource "aws_lambda_function" "cloudresume-api" {
   source_code_hash = data.archive_file.zip_the_python_code.output_base64sha256
   function_name    = "cloudresume-api"
   role             = aws_iam_role.iam_for_lambda.arn
-  handler          = "cloudresume-api.handler"
+  handler          = "cloudresume-api.lambda_handler"
   runtime          = "python3.12"
 }
 
@@ -49,9 +49,10 @@ resource "aws_iam_policy" "iam_policy_for_resume_project" {
           "Effect" : "Allow",
           "Action" : [
             "dynamodb:UpdateItem",
-			      "dynamodb:GetItem"
+			"dynamodb:GetItem",
+			"dynamodb:PutItem"
           ],
-          "Resource" : "arn:aws:dynamodb:*:*:table/resume-challenge"
+          "Resource" : "arn:aws:dynamodb:*:*:table/cloudresume-test"
         },
       ]
   })
