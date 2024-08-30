@@ -1,6 +1,6 @@
 # AWS Cloud Resume Challenge
 
-The Cloud Resume Challenge is a project originally created by Forrest Brazeal. It is a multi-step process designed to help individuals build and demonstrate essential skills needed for a career in cloud computing. This repository contains the accompanying code for a blog post on Medium.
+The Cloud Resume Challenge is a project originally created by Forrest Brazeal. It is a multi-step process designed to help individuals build and demonstrate essential skills needed for a career in cloud computing. This repository contains the accompanying code for a [blog post](https://medium.com/@andris.keish/aws-cloud-resume-challenge-a-comprehensive-walkthrough-d6fc20ceddee) on Medium.
 
 Services Used:
 - **Amazon S3:** For static website hosting.
