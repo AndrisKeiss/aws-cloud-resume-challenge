@@ -10,5 +10,7 @@ Services Used:
     DynamoDB: To store and manage backend data.
     GitHub Actions: For CI/CD pipeline automation.
     Terraform: To manage infrastructure as code.
+
+![image](https://github.com/user-attachments/assets/3b304583-b91f-404c-b98a-6e8a75be3007)
     
 Feel free to explore the code and use it as a reference for your own cloud projects!
