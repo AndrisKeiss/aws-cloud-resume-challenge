@@ -692,5 +692,20 @@
 <!-- Send Email -->
 <script src="assets/js/sendemail.js" type="text/javascript"></script>
 
+<!-- Chatbot -->
+<script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '66e2ca83db64981c8c62827d' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+</script>
+
 </body>
 </html>
